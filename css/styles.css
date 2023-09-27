@@ -1,0 +1,143 @@
+html{
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: 'helvetica neue';
+}
+
+body{
+  margin: 0;
+  background: url('../brown.jpg');
+  background-position: top;
+  background-size: cover;
+}
+
+header{
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../j1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: black;
+  z-index: 2;
+
+}
+
+
+h1{
+  color: white;
+  font-size: 7vw;
+  text-shadow: 2px 2px 10px brown;
+  transform: translateX(60px);
+  text-transform: capitalize;
+  /* transition: all 0.3s; */
+}
+
+nav{
+  /* padding: 20px; */
+  background: url('../brown.jpg');
+  background-size: cover;
+  position: relative;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
+  z-index: 1;
+
+
+}
+
+.fixed-nav nav{
+  position: fixed;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  /* align-items: center; */
+  padding: 0;
+  margin: 0;
+
+}
+
+nav li{
+  flex: 1;
+  /* padding: 0; */
+  /* margin: 0; */
+  border-right: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed-nav nav a{
+  color: black;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px white;
+
+}
+
+nav a{
+  font-size: 23px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+
+
+li.logo{
+  background: white;
+  padding: 10px;
+  max-width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  transform: translateX(-30px);
+}
+
+.fixed-nav li.logo{
+  max-width: 500px;
+}
+
+.logo a{
+  font-size: 40px;
+  overflow: hidden;
+}
+
+.fixed-nav .site-wrap{
+  transform: scale(1);
+}
+
+
+.site-wrap{
+  border: 2px solid red;
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  padding: 50px;
+  transform: scale(0.98);
+  background: white;
+  transition: all 0.5s;
+
+
+
+}
+
+.slide-in{
+  width: 230px;
+  height: 230px;
+}
+
+.align-left{
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right{
+  float: right;
+  margin-left: 20px;
+}
